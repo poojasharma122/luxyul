@@ -1,0 +1,1339 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Red Rose", serif;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.6px;
+}
+
+.pt-8 {
+    padding-top: 5rem;
+}
+
+.pb-8 {
+    padding-bottom: 5rem;
+}  
+
+.ptb-8{
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/* body {
+    background-color: #000;
+} */
+
+
+img {
+    width: 100%;
+}
+
+.aoshidden {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    /* color:; */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.aoshidden {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.figma_heading {
+    color: #111111;
+    font-weight: 700;
+    line-height: 3.125rem;
+    font-size: 2.652rem;
+}
+
+.p {
+    color: #444444;
+    font-weight: 400;
+    font-size: 1.125rem;
+    font-style: normal;
+}
+
+/* global css end here */
+
+
+/* Header CSS Start */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    background-color: #f3f3f3;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.9375rem 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav__brand {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.nav__logo,
+.footer_logo a {
+    background-image: url(../images/site-logo.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3.75rem;
+    width: 18.75rem;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.nav__toggle {
+    display: none;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    text-align: right;
+    cursor: pointer;
+    margin: auto 0;
+    z-index: 60;
+    background-image: url("../images/menu-bar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0.625rem;
+}
+
+.nav__item {
+    width: 100%;
+}
+
+.nav__link {
+    padding: 0.625rem 1.5625rem;
+    font-size: 1.1rem;
+    display: block;
+    font-weight: 500;
+    color: #222222;
+}
+
+.nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 18.75rem;
+    padding: 3.125rem 0;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+    z-index: 100;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nav--open .nav__menu {
+    transform: translateX(0);
+    justify-content: flex-start;
+}
+
+.nav__list {
+    flex-direction: column;
+}
+
+.nav__toggle {
+    display: block;
+}
+
+.nav__close {
+    position: absolute;
+    top: 0.9375rem;
+    right: 0.9375rem;
+    display: block;
+    text-align: end;
+    z-index: 55;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-image: url("../images/close.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1.25rem;
+    transition: 0.3s all ease-in-out;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.nav__item.active {
+    background: #1a4531;
+}
+
+.nav__item.active,
+.nav__item:hover {
+    background: #1a4531;
+}
+
+.nav__item.active .nav__link,
+.nav__item:hover .nav__link {
+    color: #fff;
+}
+
+.nav__item--active .nav__link {
+    color: #ffff;
+}
+
+/* Header CSS End */
+
+
+/* banner section start */
+
+.banner_section {
+    background-size: cover;
+    background-position: center;
+    height: 37.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.banner_section::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0 0 0/60%);
+    z-index: -1;
+}
+
+.home_content h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.home_content p {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+/* banner section end */
+
+/*  */
+
+.luxyul_first_image {
+    position: absolute;
+    left: 55px;
+    top: 0;
+    width: 60%;
+    height: 412px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+    z-index: 2;
+    border: 4px solid #fff;
+}
+
+.luxyul_second_image {
+    position: absolute;
+    right: 0px;
+    top: 180px;
+    width: 40%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    z-index: 1;
+    opacity: 1;
+}
+
+.luxyul_right_content {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.left_top span {
+    border: 1px solid #fff;
+}
+
+.left_heading h2 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.luxyul-border {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.luxyul-border::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 2px;
+    background: #000;
+}
+.luxyul-border p {
+    margin-left: 80px; /* 70px border + 10px gap */
+    position: relative;
+    z-index: 1;
+}
+
+/* after banner css end */
+
+
+/* stay style section start */
+.stay_in_style {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    z-index: 4;
+    margin-top: 50px;
+}
+
+.stay_in_style_inner {
+    padding: 50px 0;
+}
+
+.stay_in_style_inner h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.stay_in_style_inner p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border: 1px solid #fff;
+  }
+  
+ 
+  .cta-btn:hover {
+    color: #1a4531;             
+    transform: translateY(-5px);  
+    background-color: #fff;   
+  }
+/* stay style section end */
+
+
+
+/* feature highlight css start */
+
+.section_heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  
+  .highlight-card {
+    background: #1a4531;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,30%);
+    transition: transform 0.3s ease;
+    border: 1px solid #ffffff5c;
+  }
+  
+  .highlight-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .highlight-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .highlight-card p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  .featured-highlights {
+    background-color: #1a4531;
+}
+
+/* Signature Experiences css start */
+
+.signature-experiences {
+    position: relative;              /* for z-index layering */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    display: flex;                   /* flexbox for alignment */
+    align-items: center;             /* vertically center */
+  }
+  
+  .signature-experiences::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);  /* dark overlay for readability */
+    z-index: 1;
+  }
+  
+  .stay_in_style_inner_signature {
+    position: relative;
+    z-index: 2;                      /* content above image + overlay */
+    max-width: 600px;                /* limit text width */
+    text-align: left;                /* left align text */
+  }
+  
+  .stay_in_style_inner_signature h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .stay_in_style_inner_signature p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  
+
+/* Signature Experiences css end */
+
+
+
+/* world class event css start */
+
+.world_class_event {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  
+  .world_class_event::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: inherit;              
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);                
+    transform: scale(1.1);            
+    z-index: 0;
+  }
+  
+  /* Dark overlay for readability */
+  .world_class_event::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .stay_in_style_inner_signature {
+    position: relative;
+    z-index: 2;              
+    max-width: 600px;
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+  }
+  
+ 
+  .right-content {
+    margin-left: auto;       
+    /* text-align: right;        */
+  }
+  
+  .stay_in_style_inner_signature h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .stay_in_style_inner_signature p {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  /* world class event css end */
+
+
+
+  /*  Monaco at a Glance section css start  */
+  .monaco-glance {
+    background: #eee7da;
+  }
+  
+  .monaco-glance .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .monaco-glance h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #000;
+    line-height: 27px;
+}
+  
+  .monaco-glance .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .monaco-glance .card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+  }
+  
+  .monaco-glance .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+  
+  .monaco-glance .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .monaco-glance .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .monaco-glance h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .monaco-glance p {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+/*  Monaco at a Glance section css end  */
+
+
+
+/* newslatter css start */
+
+.newslattter input {
+    width: 70%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0.625rem;
+    color: #fff;
+}
+
+.newslattter {
+    background-color: #1a4531;
+}
+
+.right_column h4 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    line-height: 27px;
+}
+
+.right_column p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.newslattter_button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    transition: color .2s linear, background .3s linear, opacity .2s linear;
+    margin-left: 10px;
+}
+
+.newslattter_button:hover{
+    background-color: #af884a;
+    border: 1px solid #af884a;
+}
+
+/* newslatter css end */
+
+
+
+/* why choose section css start */
+.inner_why_choose img {
+    width: 80px;
+    height: 80px;
+}
+
+.inner_why_choose {
+    border: 1px solid #0000008a;
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: #1a453163 5px 5px, #1a45318c 10px 10px, #1a453138 15px 15px, #1a45311f 20px 20px, #1a45310d 25px 25px;
+}
+
+.why_choose_heading h2 {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 2.5rem;
+}
+
+.why_choose_text h4 {
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+}
+
+.hover-rotate img {
+    transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.hover-rotate:hover img {
+    transform: rotateY(180deg);
+}
+  
+
+/* why choose section end */
+
+
+/* footer css start */
+
+
+.footer_disclaimer {
+    margin-bottom: 2.2rem;
+    text-align: center;
+}
+
+.footer_disclaimer h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.footer_disclaimer p {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.footer_navbar {
+    border-bottom: 1px solid gray;
+    padding-bottom: 2.2rem;
+}
+
+.footer_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+}
+
+.footer_item a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.footer_item a:hover {
+    color: #e1bd85;
+}
+
+/* .footer_btm {
+    padding-block: 24px;
+} */
+
+.copyright p {
+    color: #fff;
+}
+
+.footer_btmWrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ssl {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.sslLink {
+    background-image: url("../images/ssl-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 134px;
+    width: 100%;
+    height: 47px;
+    display: inline-block;
+}
+
+.socials {
+    padding-block: 2rem;
+}
+
+.social_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social a {
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.social a:hover {
+    background-color: #af884a;
+    border-color: transparent;
+    transform: translateY(-10px);
+    color: #fff;
+}
+
+.social i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.social a svg {
+    height: 100%;
+    width: 100%;
+    fill: #fff;
+    padding: 9px;
+}
+
+.social svg {
+    padding: 5px;
+}
+
+.footer {
+    background-color: #1a4531;
+}
+
+
+/*Stay Collection page css start  */
+
+
+/* after banner second section css start */
+
+.heading_decoration_img {
+    height: 4.5rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.heading_decoratoin {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-width: 18.75rem;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.luxyu_main_content_second {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.luxyu_main_content_second h2 {
+    font-size: 2.5rem;
+    line-height: 42px;
+    margin: 30px 0;
+    color: #000;
+    text-align: center;
+}
+
+.luxyu_main_content_second p {
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* after banner second section css end */
+
+
+
+/* Stay Collection hotel section css start */
+
+.strio_inner_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+}
+
+.strip_inner_text {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 7px 30px 7px 30px;
+    background: #eee7da;
+    height: 100%;
+}
+
+.strip_inner_text a h2   {
+    font-size: 2rem;
+    color: #000;
+    line-height: 40px;
+    margin-bottom: 20px;
+    
+}
+
+.strip_inner_text a h2:hover   {
+    color: #af884a;
+}
+
+
+
+.vegas_content .row .col-lg-6 {
+    padding: 0;
+}
+
+/* .vegas_content {
+    max-width: 90%;
+    margin: 0 auto;
+} */
+
+
+.strio_inner_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.strio_inner_img .img-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, #1a4531 100%);
+    opacity: 0;
+    transition: opacity 0.4s, transform 0.4s;
+    pointer-events: none;
+    z-index: 2;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.strio_inner_img:hover .img-hover-overlay {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+.strio_inner_img .img-hover-overlay.right-to-left {
+    transform-origin: right-left;
+}
+
+.strip_inner_text ul li {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 16px;
+    color: #000;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.strip_inner_text ul li::before {
+    position: absolute;
+    content: ".";
+    font-size: 60px;
+    top: -51px;
+    left: -1px;
+}
+
+.strip_inner_text p {
+    color: #000;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+/* Stay Collection hotel section css end */
+
+
+
+
+
+  /* best visit time im manaco css start */
+
+.custom-img-hover-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: flex-end;
+}
+
+.custom-img-hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1a4531;
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    transition: opacity 0.3s;
+    text-align: center;
+}
+
+.custom-img-hover-box:hover .custom-img-hover-content {
+    opacity: 1;
+}
+
+.custom-img-hover-content h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 28px;
+}
+
+.custom-img-hover-content p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.field_hotel_heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.field_hotel_heading h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hotel_in_vegas {
+    background: #eee7da;
+}
+
+/* best visit time im manaco css end */
+
+
+/* How to Get to Monaco css start */
+
+.how_to_get_inner {
+    border: 2px solid #1a4531;
+    border-radius: 10px;
+    padding: 25px;
+    height: 100%;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.how_to_get_inner:hover{
+    transform: rotateY('-5px');
+    background-color: #eee7da;
+}
+
+.how_to_get_inner h4 {
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.how_to_get_inner p {
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+}
+
+.building-better-card-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.building-better-card-icon {
+    margin-bottom: 8px;
+}
+
+/* How to Get to Monaco css end */
+
+
+
+/* Getting Around Monaco section css start */
+
+.getting_around_text ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.getting_around_text ul li::before {
+    position: absolute;
+    content: ".";
+    font-size: 50px;
+    color: #000;
+    top: -14px;
+    left: -4px;
+}
+
+.getting_around_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 23rem;
+    border-radius: 40px 3px;
+}
+
+.getting_around_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.cultural_etiquette .getting_around_img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 23rem;
+    border-radius: 3px 40px;
+}
+
+.cultural_etiquette {
+    background-color: #eee7da;
+}
+
+.getting_around_heading p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.getting_around_heading h2 {
+    font-size: 2.1rem;
+    line-height: 2rem;
+    color: #000;
+}
+
+/* Getting Around Monaco section css end */
+
+
+
+/* contact page css start */
+
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h2 {
+    font-weight: 700;
+}
+
+.contact-header p {
+    color: #777;
+}
+
+.contact-info-box {
+    background: #fff;
+    padding: 20px 25px;
+    border-left: 5px solid #1a4531;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 41%);
+}
+
+.contact-info-box i {
+    color: #ffc107;
+    margin-right: 10px;
+}
+
+.contact-info-box a {
+    color: #1a4531;
+    text-decoration: none;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-yellow {
+    background: #1a4531;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+}
+
+.btn-yellow:hover {
+    color: #fff;
+    background: #af884a;
+}
+
+.contact-info-box svg {
+    width: 25px;
+    height: 25px;
+}
+
+.left_section {
+    box-shadow: #1a4531 0px 3px 8px;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.right_section {
+    box-shadow: #1a4531 0px 3px 8px;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.outdoor_content .row .col-lg-6 {
+    padding: 0;
+}
+
+/* contact page css end */
+
+
+/* about page css start */
+
+.about_inner {
+    padding: 26px;
+    border: 1px solid #1a4531;
+    background-color: #eee7da;
+}
+
+.about_inner p {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #1a4531;
+    padding-bottom: 15px;
+}
+
+.about_inner ul li {
+    position: relative;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+}
+
+.about_inner ul li::before {
+    position: absolute;
+    content: ".";
+    font-size: 50px;
+    top: -16px;
+    left: 0;
+}
+
+/* about page css end */
+
+
+/* privacy page css strat */
+
+.privcy_inner_text ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.privcy_inner_text ul li::before {
+    position: absolute;
+    content: '.';
+    font-size: 50px;
+    color: #000;
+    top: -15px;
+    left: -1px;
+}
+
+.privcy_inner_text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.privcy_inner_text h2 {
+    font-size: 2.1rem;
+    color: #1a4531;
+    line-height: 2.5rem;
+}
+
+.privcy_inner_text p a {
+    color: #1a4531;
+}
+
+.privcy_inner_text p a:hover {
+    color: #000;
+}
+
