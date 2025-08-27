@@ -1157,6 +1157,8 @@ ul {
     border-radius: 3px 40px;
 }
 
+
+
 .cultural_etiquette {
     background-color: #eee7da;
 }
@@ -1336,4 +1338,278 @@ ul {
 .privcy_inner_text p a:hover {
     color: #000;
 }
+
+/* privacy page css end */
+
+
+  /* Events Calendar Section css start */
+
+  .events-calendar-main {
+    background: #f8f6f2;
+}
+.events-calendar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.event-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem 2.5rem;
+    gap: 2rem;
+    transition: box-shadow 0.2s;
+    border-left: 6px solid #c9a063;
+    position: relative;
+}
+.event-card:hover {
+    box-shadow: 0 8px 32px rgba(201,160,99,0.13);
+}
+.event-date {
+    min-width: 110px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #c9a063;
+    letter-spacing: 1px;
+    margin-top: 0.2rem;
+    text-align: center;
+    background: #f3ede3;
+    border-radius: 12px;
+    padding: 0.7rem 1.2rem;
+    box-shadow: 0 2px 8px rgba(201,160,99,0.07);
+}
+.event-content {
+    flex: 1;
+}
+.event-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1a4531;
+    margin-bottom: 0.5rem;
+}
+.event-desc {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 0.7rem;
+    line-height: 1.6;
+}
+.event-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.event-details li {
+    font-size: 0.98rem;
+    color: #222;
+    margin-bottom: 0.3rem;
+    padding-left: 1.2em;
+    position: relative;
+}
+.event-details li strong {
+    color: #c9a063;
+    font-weight: 600;
+}
+.event-details li:before {
+    content: "•";
+    color: #c9a063;
+    position: absolute;
+    left: 0;
+    font-size: 1.1em;
+    top: 0;
+}
+
+/* Events Calendar Section css end */
+
+
+
+
+/* Guide to Monaco section css start */
+
+.guide_col_inner {
+    border: 2px solid #fff;
+    height: 100%;
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+    background: #1a4531;
+}
+
+.guide_col_inner:hover {
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #1a4531;
+}
+
+.guide_col_inner p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.guide_monaco_heading h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+}
+
+.guide_to_monaco {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Guide to Monaco section css end */
+
+
+
+/* 12 Things You Didn’t Know section css start  */
+.montecarlo-unique-experiences {
+    background: #fff7ef;
+    padding: 60px 0;
+}
+
+.montecarlo-unique-experiences .section-title {
+    text-align: center;
+    color: #1a4531;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.montecarlo-unique-experiences .section-desc {
+    text-align: center;
+    color: #000;
+    font-size: 1.08rem;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    letter-spacing: 1px;
+}
+
+.montecarlo-experiences-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.montecarlo-experience-item {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(201, 160, 99, 0.08);
+    border: 1.5px solid #f3e6d6;
+    width: 30%;
+    min-width: 270px;
+    max-width: 340px;
+    padding: 2rem 1.3rem 1.3rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.montecarlo-experience-item:hover {
+    box-shadow: 0 8px 32px rgba(201, 160, 99, 0.16);
+    transform: translateY(-6px) scale(1.03);
+    border-color: #c9a063;
+}
+
+.montecarlo-experience-number {
+    position: absolute;
+    top: 1.1rem;
+    right: 50%;
+    background: #c9a063;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(201, 160, 99, 0.09);
+}
+
+.montecarlo-experience-title {
+    color: #1a4531;
+    font-size: 1.13rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+.montecarlo-experience-desc {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.montecarlo-para {
+    color: #000;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* 12 Things You Didn’t Know section css end  */
+
+
+/* The Ultimate Monaco Grand section css start */
+
+.monaco_ultimate_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.monaco_ultimate_inner .row .col-md-6 {
+    padding: 0;
+}
+
+.monaco_ultimate_text {
+    padding: 20px;
+    background: #eee7da;
+}
+
+.monaco_ultimate_text p {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.monaco_ultimate_text ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.monaco_ultimate_text ul li::before {
+    position: absolute;
+    content: '.';
+    font-size: 50px;
+    color: #000;
+    top: -15px;
+    left: -2px;
+}
+
+/* The Ultimate Monaco Grand section css end */
 

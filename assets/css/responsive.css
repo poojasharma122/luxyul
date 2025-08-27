@@ -51,7 +51,29 @@
         width: 65%;
         height: 190px;
     }
+    .event-card {
+        flex-direction: column !important;
+        padding: 1.5rem 1.2rem !important;
+        gap: 1rem !important;
+    }
+    .event-date {
+        margin-bottom: 0.5rem;
+        min-width: unset;
+        width: fit-content;
+    }
+
+    .montecarlo-unique-experiences .section-title {
+        font-size: 1.6rem;
+    }
+
+    .montecarlo-experience-item {
+        width: 45%;
+        min-width: 220px;
+        padding: 1.3rem 1rem 1rem 1rem;
+    }
 }
+
+
 @media (max-width: 767px) {
     .custom-image-stack {
         min-height: 180px;
@@ -65,5 +87,42 @@
     .custom-first-image {
         width: 75%;
         height: 110px;
+    }
+
+    .events-calendar-list {
+        gap: 1.2rem !important;
+    }
+    .event-card {
+        padding: 1rem 0.7rem !important;
+        border-radius: 10px !important;
+    }
+    .event-title {
+        font-size: 1.08rem !important;
+    }
+    .event-date {
+        font-size: 1rem !important;
+        padding: 0.5rem 0.8rem !important;
+    }
+    .event-desc, .event-details li {
+        font-size: 0.93rem !important;
+    }
+
+    .montecarlo-unique-experiences {
+        padding: 40px 0;
+    }
+
+    .montecarlo-unique-experiences .section-title {
+        font-size: 1.2rem;
+    }
+
+    .montecarlo-unique-experiences .section-desc {
+        font-size: 0.98rem;
+    }
+
+    .montecarlo-experience-item {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 1rem 0.7rem 0.7rem 0.7rem;
     }
 }
