@@ -447,119 +447,7 @@ ul {
     background-color: #1a4531;
 }
 
-/* Signature Experiences css start */
 
-.signature-experiences {
-    position: relative;              /* for z-index layering */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 30rem;
-    display: flex;                   /* flexbox for alignment */
-    align-items: center;             /* vertically center */
-  }
-  
-  .signature-experiences::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4);  /* dark overlay for readability */
-    z-index: 1;
-  }
-  
-  .stay_in_style_inner_signature {
-    position: relative;
-    z-index: 2;                      /* content above image + overlay */
-    max-width: 600px;                /* limit text width */
-    text-align: left;                /* left align text */
-  }
-  
-  .stay_in_style_inner_signature h2 {
-    font-size: 2.5rem;
-    color: #fff;
-    line-height: 2.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .stay_in_style_inner_signature p {
-    color: #fff;
-    font-size: 1rem;
-    line-height: 25px;
-    margin-bottom: 20px;
-  }
-  
-
-/* Signature Experiences css end */
-
-
-
-/* world class event css start */
-
-.world_class_event {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  
-  .world_class_event::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: inherit;              
-    background-position: center;
-    background-size: cover;
-    filter: blur(2px);                
-    transform: scale(1.1);            
-    z-index: 0;
-  }
-  
-  /* Dark overlay for readability */
-  .world_class_event::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-  }
-  
-  .stay_in_style_inner_signature {
-    position: relative;
-    z-index: 2;              
-    max-width: 600px;
-    text-align: left;
-    color: #fff;
-    padding: 20px;
-  }
-  
- 
-  .right-content {
-    margin-left: auto;       
-    /* text-align: right;        */
-  }
-  
-  .stay_in_style_inner_signature h2 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    margin-bottom: 30px;
-    color: #fff;
-  }
-  
-  .stay_in_style_inner_signature p {
-    font-size: 1rem;
-    line-height: 25px;
-    margin-bottom: 20px;
-    color: #fff;
-  }
-
-  /* world class event css end */
 
 
 
@@ -1668,4 +1556,78 @@ ul {
 .shpoing_the_carre_inner_text {
     padding: 20px 0;
 }
+
+
+
+
+/* card stack start  */
+
+.stack-cards .cards {
+    width: 100%;
+    position:relative;
+}
+.stack-cards .cards .card:last-child {
+    margin: 0;
+}
+
+.stack-cards .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: sticky;
+    top: calc(var(--item) * 40px);
+    min-height: 401px;
+    border-radius: 60px;
+    overflow: hidden;
+    gap: 5px;
+    padding: 50px 20px;
+}
+
+.stack-cards .card img {
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+.stack-cards .card[style="--item:1;"] {
+    background: url("../images/Signature-Experiences.webp") no-repeat center / cover,   linear-gradient(180deg, #85C66A 0%, #1E353E 100%);
+    background-blend-mode: multiply;
+}
+.stack-cards .card[style="--item:2;"] {
+    background: url("../images/World-Class-Events-img2.webp") no-repeat center / cover,   linear-gradient(180deg, #EF7969 0%, #000000 100%);
+    background-blend-mode: multiply;
+}
+.stack-cards .card[style="--item:3;"] {
+    background: url("../images/Crafted-Itineraries.jpg") no-repeat center / cover,   linear-gradient(180deg, #8280D2 0%, #000000 100%);
+    background-blend-mode: multiply;
+}
+.stack-cards .card[style="--item:4;"] {
+    background: url("../images/The-Insider-Journal.jpg") no-repeat center / cover,   linear-gradient(180deg, #16A392 0%, #041F0D 100%);
+    background-blend-mode: multiply;
+}
+.stack-cards .card[style="--item:1;"]::before{
+    background: linear-gradient(180deg, #85C66A 0%, #1E353E 100%);
+    opacity: 0.1;
+}
+.stack-cards .card span {
+    color: #FFF;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+}
+.stack-cards .card  p {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* card stack end  */ 
 

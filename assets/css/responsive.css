@@ -203,4 +203,9 @@
     .strip_inner_text {
         padding: 15px 30px 7px 30px;
     }
+
+    .stack-cards .card span {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
 }
