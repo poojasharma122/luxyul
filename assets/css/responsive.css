@@ -208,4 +208,9 @@
         font-size: 2rem;
         line-height: 2.5rem;
     }
+
+    .privcy_inner_text h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
 }
