@@ -125,8 +125,8 @@ ul {
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 3.75rem;
-    width: 18.75rem;
+    height: 4.75rem;
+    width: 10.75rem;
     display: inline-block;
     margin-top: 5px;
 }
@@ -428,7 +428,8 @@ ul {
   
   .highlight-card:hover {
     transform: translateY(-5px);
-  }
+    box-shadow: #e1bd85 0px 3px 8px;
+}
   
   .highlight-card h3 {
     font-size: 1.25rem;
@@ -577,7 +578,7 @@ ul {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #000;
-    line-height: 27px;
+    line-height: 35px;
 }
   
   .monaco-glance .cards {
@@ -694,7 +695,7 @@ ul {
     border-radius: 10px;
     padding: 30px;
     height: 100%;
-    box-shadow: #1a453163 5px 5px, #1a45318c 10px 10px, #1a453138 15px 15px, #1a45311f 20px 20px, #1a45310d 25px 25px;
+    box-shadow: #1a453163 5px 5px, #1a453152 10px 10px, #1a453138 15px 15px, #1a45311f 20px 20px, #1a45310d 25px 25px;
 }
 
 .why_choose_heading h2 {
@@ -753,7 +754,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0 2rem;
+    gap: 2rem;
 }
 
 .footer_item a {
@@ -914,12 +915,18 @@ ul {
     height: 100%;
 }
 
-.strip_inner_text a h2   {
+.strip_inner_text h2   {
     font-size: 2rem;
-    color: #000;
+    color: #1a4531;
     line-height: 40px;
     margin-bottom: 20px;
-    
+}
+
+.strip_inner_text a h2   {
+    font-size: 2rem;
+    color: #1a4531;
+    line-height: 40px;
+    margin-bottom: 20px;
 }
 
 .strip_inner_text a h2:hover   {
@@ -1104,6 +1111,12 @@ ul {
 }
 .building-better-card-icon {
     margin-bottom: 8px;
+}
+
+.how_to_get_monaco_heading h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 3rem;
 }
 
 /* How to Get to Monaco css end */
@@ -1437,7 +1450,7 @@ ul {
 }
 
 .guide_col_inner:hover {
-    border: 2px solid #fff;
+    border: 2px solid #af884a;
     border-radius: 15px;
     color: #1a4531;
 }
@@ -1611,5 +1624,48 @@ ul {
     left: -2px;
 }
 
+.garden-hover-img {
+    cursor: pointer;
+}
+.garden-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 69, 49, 0.85); /* site theme color with opacity */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    font-family: "Red Rose", serif;
+    font-size: 1.35rem;
+    text-align: center;
+    padding: 2rem;
+    z-index: 2;
+}
+.garden-hover-img:hover .garden-hover-overlay,
+.garden-hover-img:focus .garden-hover-overlay {
+    opacity: 1;
+}
+
 /* The Ultimate Monaco Grand section css end */
+
+
+
+/* Shopping the Carré d’Or section css start */
+
+.shopping_the_carre_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.shpoing_the_carre_inner_text {
+    padding: 20px 0;
+}
 

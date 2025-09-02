@@ -71,6 +71,15 @@
         min-width: 220px;
         padding: 1.3rem 1rem 1rem 1rem;
     }
+
+    .luxyul_first_image {
+        width: 100%;
+        left: 0;
+    }
+
+    .luxyul_second_image {
+        display: none;
+    }
 }
 
 
@@ -124,5 +133,74 @@
         max-width: 100%;
         min-width: 0;
         padding: 1rem 0.7rem 0.7rem 0.7rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .left_heading h2 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .pt-8 {
+        padding-top: 3rem !important;
+    }
+    
+    .pb-8 {
+        padding-bottom: 3rem !important;
+    } 
+
+    .section_heading {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .newslattter input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+    .newslattter_button {
+        margin-left: 0px;
+    }
+
+    .why_choose_heading h2 {
+        font-size: 2rem;
+    }
+
+    .why_choose_text h4 {
+        font-size: 16px;
+    }
+
+    .footer_btmWrapp {
+        flex-wrap: wrap;
+    }
+
+    .ssl {
+        width: 70%;
+    }
+
+    .copyright {
+        text-align: center;
+        width: 100%;
+    }
+
+    .monaco-glance h2 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    .home_content h2 {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .strip_inner_text a h2 {
+        line-height: 32px;
+    }
+
+    .strip_inner_text {
+        padding: 15px 30px 7px 30px;
     }
 }
