@@ -19,3 +19,10 @@ $(document).ready(function() {
   });
   // Header Scroll JS End
 
+
+    // AOS JS Start
+    AOS.init({
+      duration: 1200,
+    });
+    // AOS JS End
+

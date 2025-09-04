@@ -121,7 +121,7 @@
     }
 
     .montecarlo-unique-experiences .section-title {
-        font-size: 1.2rem;
+        font-size: 2.2rem;
     }
 
     .montecarlo-unique-experiences .section-desc {
@@ -212,5 +212,33 @@
     .privcy_inner_text h2 {
         font-size: 2rem;
         line-height: 2rem;
+    }
+
+    .luxyu_main_content_second h2 {
+        font-size: 2rem;
+        line-height: 35px;
+        margin: 20px 0;
+    }
+
+    .banner_section {
+        height: 30.75rem;
+    }
+
+    .guide_monaco_heading h2 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .montecarlo-unique-experiences .section-title {
+        font-size: 2rem;
+    }
+
+    .montecarlo-experience-number {
+        top: 0.625rem;
+        right: 47%;
+    }
+
+    .montecarlo-unique-experiences {
+        margin-top: 3rem;
     }
 }
