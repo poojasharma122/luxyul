@@ -242,7 +242,7 @@ ul {
 .banner_section {
     background-size: cover;
     background-position: center;
-    height: 37.75rem;
+    height: 40.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,7 +257,7 @@ ul {
     inset: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0 0 0/60%);
+    background-color: rgba(0 0 0/40%);
     z-index: -1;
 }
 
@@ -539,6 +539,11 @@ ul {
     border-bottom: 1px solid #fff;
     padding: 0.625rem;
     color: #fff;
+}
+
+.newslattter input::placeholder {
+    color: #fff;
+    font-size: 1rem;
 }
 
 .newslattter {
@@ -1176,8 +1181,9 @@ ul {
 
 .about_inner {
     padding: 26px;
-    border: 1px solid #1a4531;
     background-color: #eee7da;
+    border-radius: 20px;
+    box-shadow: rgb(255 255 255 / 25%) 0px 1px 1px 0px inset, rgb(50 50 93 / 15%) 0px 50px 100px -20px, rgb(0 0 0 / 20%) 0px 30px 60px -30px;
 }
 
 .about_inner p {
@@ -1343,6 +1349,7 @@ ul {
 .guide_col_inner {
     border: 2px solid #fff;
     height: 100%;
+    border-radius: 15px;
     padding: 25px;
     transition: all 0.3s ease-in-out;
     background: #1a4531;
@@ -1352,7 +1359,7 @@ ul {
     border: 2px solid #af884a;
     border-radius: 15px;
     color: #1a4531;
-    transform: translateY(5px);
+    transform: translateY(-6px) scale(1.03);
 }
 
 .guide_col_inner p {
@@ -1717,4 +1724,6 @@ ul {
     background: transparent;
     font-size: 1.1rem;
 }
+
+
 
