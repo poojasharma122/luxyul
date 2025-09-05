@@ -1241,9 +1241,10 @@ ul {
     position: relative;
     padding-left: 30px;
     margin-bottom: 15px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     letter-spacing: 1px;
+    color: #000;
 }
 
 .privcy_inner_text ul li::before {
@@ -1256,7 +1257,7 @@ ul {
 }
 
 .privcy_inner_text p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     letter-spacing: 1px;
     color: #000;
