@@ -134,6 +134,24 @@
         min-width: 0;
         padding: 1rem 0.7rem 0.7rem 0.7rem;
     }
+
+    .strip_inner_text {
+        padding: 15px 30px 30px 30px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .nav__logo, .footer_logo a {
+        height: 4.75rem;
+        width: 10.75rem;
+    }
+
+    .nav__toggle {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -198,6 +216,7 @@
 
     .strip_inner_text a h2 {
         line-height: 32px;
+        font-size: 1.6rem;
     }
 
     .strip_inner_text {
@@ -250,5 +269,54 @@
     .getting_around_heading h2 {
         font-size: 2rem;
    
+    }
+
+    .hotel_button button {
+        padding: 8px;
+        margin-top: 8px;
+        font-size: 1rem;
+    }
+
+    .strip_inner_text p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .strip_inner_text ul li {
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+
+    .right_column h4 {
+        font-size: 1.6rem;
+    }
+
+    .strio_inner_img {
+        height: 30rem;
+    }
+
+    .strip_inner_text h5 {
+        font-size: 18px;
+    }
+
+    .nav__logo, .footer_logo a {
+        height: 3.75rem;
+        width: 8.75rem;
+    }
+
+    .nav__toggle {
+        width: 2.1875rem;
+        height: 2.1875rem;
+    }
+
+    .how_to_get_monaco_heading h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .how_to_get_inner h4 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 10px;
     }
 }
