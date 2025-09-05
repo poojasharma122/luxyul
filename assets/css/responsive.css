@@ -138,6 +138,15 @@
     .strip_inner_text {
         padding: 15px 30px 30px 30px;
     }
+
+    .home_content_home h2 {
+        font-size: 4rem;
+        line-height: 63px;
+    }
+
+    .banner_section_home {
+        height: 40.75rem;
+    }
 }
 
 @media (max-width: 575px) {
@@ -150,6 +159,11 @@
     .nav__toggle {
         width: 2.8rem;
         height: 2.8rem;
+    }
+
+    .home_content_home h2 {
+        font-size: 3rem;
+        line-height: 48px;
     }
 
 }
@@ -327,5 +341,14 @@
     .privcy_inner_text ul li {
         font-size: 1rem;
         line-height: 1.5rem;
+    }
+
+    .banner_section_home {
+        height: 38.75rem;
+    }
+
+    .home_content_home h2 {
+        font-size: 2.5rem;
+        line-height: 40px;
     }
 }
