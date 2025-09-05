@@ -1725,5 +1725,13 @@ ul {
     font-size: 1.1rem;
 }
 
+.form-control:focus {
+    color: none;
+    background-color: none;
+    border-color: #444;
+    outline: 0;
+    box-shadow: none;
+}
+
 
 
