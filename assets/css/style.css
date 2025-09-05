@@ -169,12 +169,12 @@ ul {
 .nav__menu {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
-    width: 18.75rem;
+    width: 20.75rem;
     padding: 3.125rem 0;
     background-color: #fff;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all 0.3s linear;
     z-index: 100;
     color: #fff;
@@ -186,6 +186,7 @@ ul {
 .nav--open .nav__menu {
     transform: translateX(0);
     justify-content: flex-start;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
 }
 
 .nav__list {
@@ -360,6 +361,16 @@ ul {
     position: relative;
     z-index: 4;
     margin-top: 50px;
+}
+
+.stay_in_style::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0 0 0 / 40%);
+    z-index: -1;
 }
 
 .stay_in_style_inner {
@@ -599,7 +610,14 @@ ul {
     border-radius: 10px;
     padding: 30px;
     height: 100%;
+    /* box-shadow: #1a453163 5px 5px, #1a453152 10px 10px, #1a453138 15px 15px, #1a45311f 20px 20px, #1a45310d 25px 25px; */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.inner_why_choose:hover{
     box-shadow: #1a453163 5px 5px, #1a453152 10px 10px, #1a453138 15px 15px, #1a45311f 20px 20px, #1a45310d 25px 25px;
+    transform: translateY(-5px);
 }
 
 .why_choose_heading h2 {
@@ -1310,7 +1328,7 @@ ul {
 }
 .event-desc {
     font-size: 1rem;
-    color: #444;
+    color: #000;
     margin-bottom: 0.7rem;
     line-height: 1.6;
 }
@@ -1321,7 +1339,7 @@ ul {
 }
 .event-details li {
     font-size: 0.98rem;
-    color: #222;
+    color: #000;
     margin-bottom: 0.3rem;
     padding-left: 1.2em;
     position: relative;
