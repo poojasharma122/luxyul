@@ -243,7 +243,7 @@ ul {
 .banner_section {
     background-size: cover;
     background-position: center;
-    height: 40.75rem;
+    height: 30.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1736,7 +1736,6 @@ ul {
     font-style: normal;
     font-weight: 600;
     line-height: 3rem;
-    text-decoration-line: underline;
     margin-bottom: 20px;
 }
 .stack-cards .card  p {

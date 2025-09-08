@@ -106,18 +106,22 @@
                                         </h5>
                                     </div>
                                    
-                                <form>
+                                <form id="contactForm" novalidate>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Full Name">
+                                        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Full Name" required>
+                                        <div class="invalid-feedback">Please enter your full name.</div>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" placeholder="Email Address">
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                                        <div class="invalid-feedback">Please enter a subject.</div>
                                     </div>
                                     <div class="mb-3">
-                                        <textarea rows="5" class="form-control" placeholder="Message"></textarea>
+                                        <textarea rows="5" id="message" name="message" class="form-control" placeholder="Message" required></textarea>
+                                        <div class="invalid-feedback">Please enter your message.</div>
                                     </div>
                                     <button type="submit" class="btn btn-yellow">Submit</button>
                                 </form>
