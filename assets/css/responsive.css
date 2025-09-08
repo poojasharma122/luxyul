@@ -155,6 +155,13 @@
     .banner_section_home {
         height: 40.75rem;
     }
+
+    .strio_inner_img {
+        height: 28rem;
+    }
+    .second-row .row{
+        flex-direction: column-reverse;
+    }
 }
 
 @media (max-width: 575px) {
