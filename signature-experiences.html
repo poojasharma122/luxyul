@@ -382,9 +382,11 @@
                     </div>
                     <div class="col-md-6">
                         <form class="newsletter-form" novalidate>
-                            <input type="email" class="newsletter-email" placeholder="Enter Your Email" required>
-                            <button type="submit" class="newslattter_button">Subscribe</button>
-                            <div class="invalid-feedback" style="display:none;color:#ffdddd;padding-top:8px;">Please enter a valid email.</div>
+                            <div class="newsletter-input-group">
+                                <input type="email" id="newsletter-email" class="name newsletter-email" placeholder="Enter Your Email" required>
+                                <button type="submit" class="newslattter_button">Subscribe</button>
+                            </div>
+                            <div class="invalid-feedback newsletter-feedback">Please enter a valid email address.</div>
                         </form>
                     </div>
                 </div>

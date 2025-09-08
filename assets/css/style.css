@@ -591,6 +591,37 @@ ul {
     font-size: 1rem;
 }
 
+/* Newsletter validation styles */
+.newsletter-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-email.is-invalid {
+    border-bottom: 1px solid #dc3545 !important;
+    box-shadow: 0 1px 0 0 #dc3545;
+}
+
+.newsletter-feedback {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.newsletter-form {
+    position: relative;
+}
+
+.newsletter-form .newsletter-input-group {
+    position: relative;
+}
+
 .newslattter {
     background-color: #1a4531;
 }
@@ -1198,7 +1229,7 @@ ul {
     color: white;
     padding: 10px 30px;
     border: none;
-    border-radius: 30px;
+    border-radius: 0px;
 }
 
 .btn-yellow:hover {
