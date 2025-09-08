@@ -31,6 +31,7 @@ h6 {
     padding: 0;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
+    word-wrap: break-word;
 }
 
 /* body {
@@ -866,7 +867,7 @@ ul {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    padding: 7px 40px 7px 40px;
+    padding: 30px 40px 30px 40px;
     background: #eee7da;
     height: 100%;
 }

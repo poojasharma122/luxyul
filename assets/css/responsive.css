@@ -80,6 +80,14 @@
     .luxyul_second_image {
         display: none;
     }
+
+    .home_content_home h2 {
+        font-size: 4rem;
+    }
+    
+    .newslattter input {
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -307,7 +315,7 @@
     }
 
     .strio_inner_img {
-        height: 30rem;
+        height: 28rem;
     }
 
     .strip_inner_text h5 {
