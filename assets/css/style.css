@@ -1974,3 +1974,7 @@ span.icon i {
 .cards-glance .row {
     justify-content: center;
 }
+
+.card-header {
+    border-bottom: none;
+}
