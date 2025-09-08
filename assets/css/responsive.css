@@ -199,6 +199,7 @@
 
     .why_choose_heading h2 {
         font-size: 2rem;
+        line-height: 28px;
     }
 
     .why_choose_text h4 {
@@ -220,12 +221,12 @@
 
     .monaco-glance h2 {
         font-size: 2rem;
-        line-height: 35px;
+        line-height: 28px;
     }
 
     .home_content h2 {
         font-size: 2rem;
-        line-height: 50px;
+        line-height: 35px;
     }
 
     .strip_inner_text a h2 {
