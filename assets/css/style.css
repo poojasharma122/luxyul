@@ -539,6 +539,7 @@ ul {
     text-align: left;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .monaco-glance .card:hover {
@@ -1965,4 +1966,12 @@ span.icon i {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+}
+
+.cards-glance .row .col-lg-4.col-md-6 {
+    margin-bottom: 30px;
+}
+
+.cards-glance .row {
+    justify-content: center;
 }
