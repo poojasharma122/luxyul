@@ -80,3 +80,36 @@ $(document).ready(function() {
   });
 });
 
+// Newsletter email validation (all pages)
+$(document).ready(function() {
+  function isValidEmail(email) {
+    var re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  $(".newsletter-form").on("submit", function(e) {
+    var $form = $(this);
+    var $input = $form.find(".newsletter-email");
+    var $feedback = $form.find(".invalid-feedback");
+    var email = $input.val().trim();
+    if (!isValidEmail(email)) {
+      e.preventDefault();
+      e.stopPropagation();
+      $input.addClass("is-invalid");
+      $feedback.show();
+    } else {
+      $input.removeClass("is-invalid");
+      $feedback.hide();
+    }
+  });
+
+  $(document).on("input blur", ".newsletter-email", function() {
+    var $input = $(this);
+    var $feedback = $input.closest(".newsletter-form").find(".invalid-feedback");
+    if (isValidEmail($input.val().trim())) {
+      $input.removeClass("is-invalid");
+      $feedback.hide();
+    }
+  });
+});
+

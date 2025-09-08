@@ -381,8 +381,11 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="name" placeholder="Enter Your Email" required="">
-                        <button class="newslattter_button">Subscribe</button>
+                        <form class="newsletter-form" novalidate>
+                            <input type="email" class="newsletter-email" placeholder="Enter Your Email" required>
+                            <button type="submit" class="newslattter_button">Subscribe</button>
+                            <div class="invalid-feedback" style="display:none;color:#ffdddd;padding-top:8px;">Please enter a valid email.</div>
+                        </form>
                     </div>
                 </div>
             </div>
