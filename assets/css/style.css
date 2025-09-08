@@ -537,6 +537,8 @@ ul {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-align: left;
+    align-items: center;
+    justify-content: center;
 }
 
 .monaco-glance .card:hover {
@@ -544,22 +546,13 @@ ul {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-.monaco-glance .card-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #fff;
-}
 
-.monaco-glance .icon {
-    font-size: 40px;
-    margin-right: 10px;
-}
 
 .monaco-glance h3 {
     font-size: 24px;
     font-weight: 600;
     color: #fff;
+    margin-top: 20px;
 }
 
 .monaco-glance p {
@@ -568,6 +561,7 @@ ul {
     line-height: 1.5;
     letter-spacing: 1px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 /*  Monaco at a Glance section css end  */
@@ -1956,4 +1950,19 @@ ul {
     background: #1a4531;
     border-radius: 50%;
 
+}
+
+
+span.icon i {
+    color: #1a4531;
+    background: #ffff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
