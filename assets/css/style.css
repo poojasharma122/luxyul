@@ -247,15 +247,15 @@ color: #ffff;
 /* banner section start */
 
 .banner_section {
-background-size: cover;
-background-position: center;
-height: 30.75rem;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-position: relative;
-z-index: 10;
+    background-size: cover;
+    background-position: center;
+    height: 20.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .banner_section::before {
@@ -1239,6 +1239,10 @@ margin-right: 10px;
 color: #65350F;
 text-decoration: none;
 }
+
+.contact-info-box a:hover {
+    color: #000;
+    }
 
 .form-control {
 border-radius: 0;
