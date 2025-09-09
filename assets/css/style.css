@@ -123,7 +123,7 @@ display: inline-block;
 }
 
 .nav__logo, .footer_logo a {
-    background-image: url(../images/luxyul-logo-new.png);
+    background-image: url(../images/luxyul-site-logo.png);
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
