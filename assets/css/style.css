@@ -852,7 +852,7 @@ padding: 5px;
 }
 
 .footer {
-background-color: #9f7356;
+    background-color: #65350F;
 }
 
 
@@ -1950,9 +1950,12 @@ letter-spacing: 1px;
 }
 
 .copyright p a {
-color: #000000;
+    color: #ffffffa3;
 }
 
+.copyright p a:hover {
+    color: #fff;
+}
 .paragraph-text-blog ul li {
 font-size: 1rem;
 line-height: 1.5;
