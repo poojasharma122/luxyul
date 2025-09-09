@@ -2020,15 +2020,7 @@ line-height: 30px;
 margin-bottom: 15px;
 }
 
-.event_card_inner_text .cta-btn {
-display: inline-block;
-color: #9f7356;
-padding: 12px 28px;
-font-size: 1rem;
-font-weight: 600;
-text-decoration: none;
-transition: transform 0.3s ease, background 0.3s ease;
-border: 1px solid #000;
+.event_card_inner_text .cta-btn { display: inline-block; color: #9f7356; padding: 12px 28px; font-size: 1rem; font-weight: 600; text-decoration: none; transition: transform 0.3s ease, background 0.3s ease; border: 1px solid #000; -webkit-transition: transform 0.3s ease, background 0.3s ease; -moz-transition: transform 0.3s ease, background 0.3s ease; -ms-transition: transform 0.3s ease, background 0.3s ease; -o-transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .event_card_inner_text .cta-btn:hover {
