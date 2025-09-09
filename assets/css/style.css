@@ -269,16 +269,17 @@ z-index: -1;
 }
 
 .banner_section_home {
-background-size: cover;
-background-position: center;
-height: 45.75rem;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-position: relative;
-z-index: 10;
-background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 45.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
 }
 
 .banner_section_home:before {
