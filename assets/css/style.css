@@ -121,7 +121,7 @@ display: inline-block;
 }
 
 .nav__logo, .footer_logo a {
-    background-image: url(../images/main-logo.png);
+    background-image: url(../images/luxyul-logo-new.png);
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -276,6 +276,7 @@ align-items: center;
 text-align: center;
 position: relative;
 z-index: 10;
+background-attachment: fixed;
 }
 
 .banner_section_home:before {
@@ -2047,3 +2048,33 @@ transform: translateY(-5px);
 
 
 /* new design second css end */
+
+
+
+.custom-shape-divider-bottom-1757403120 {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+overflow: hidden;
+line-height: 0;
+transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1757403120 svg {
+position: relative;
+display: block;
+width: calc(100% + 1.3px);
+height: 69px;
+}
+
+.custom-shape-divider-bottom-1757403120 .shape-fill {
+fill: #FFFFFF;
+}
+
+
+
+
+
+
+
