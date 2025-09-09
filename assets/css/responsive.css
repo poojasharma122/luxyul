@@ -380,4 +380,8 @@
         font-size: 2rem;
         line-height: 2rem;
     }
+
+    .blog-heading {
+        font-size: 1.8rem;
+    }
 }
