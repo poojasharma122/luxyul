@@ -148,7 +148,7 @@ background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
 border: none;
-filter: invert(48%) sepia(44%) saturate(401%) hue-rotate(341deg) brightness(91%) contrast(86%);
+filter: brightness(0) saturate(100%) invert(20%) sepia(64%) saturate(751%) hue-rotate(347deg) brightness(94%) contrast(94%);
 background-color: transparent;
 }
 
@@ -211,7 +211,7 @@ text-align: end;
 z-index: 55;
 height: 2.25rem;
 width: 2.25rem;
-background-image: url("../images/closef.png");
+background-image: url("../images/clo.png");
 background-size: 60%;
 background-repeat: no-repeat;
 background-position: center;
@@ -224,12 +224,12 @@ background-color: #fff;
 }
 
 .nav__item.active {
-background: #9f7356;
+background: #65350F;
 }
 
 .nav__item.active,
 .nav__item:hover {
-background: #9f7356;
+background: #65350F;
 }
 
 .nav__item.active .nav__link,
@@ -453,7 +453,7 @@ border: 1px solid #fff;
 
 
 .cta-btn:hover {
-color: #9f7356;
+color: #65350F;
 transform: translateY(-5px);
 background-color: #fff;
 }
@@ -517,7 +517,7 @@ text-align: center;
 }
 
 .featured-highlights {
-background-color: #9f7356;
+background-color: #65350F;
 }
 
 
@@ -549,7 +549,7 @@ gap: 20px;
 }
 
 .monaco-glance .card {
-background: #9f7356;
+background: #65350F;
 border-radius: 15px;
 padding: 25px;
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -623,7 +623,7 @@ body .newsletter-feedback {
     top: 100%;
     left: 0;
     z-index: 10;
-    color: #9f7356 !important;
+    color: #65350F !important;
     background: #fdfdfd;
     padding: 10px;
     border-radius: 6px;
@@ -641,7 +641,7 @@ position: relative;
 }
 
 .newslattter {
-background-color: #9f7356;
+background-color: #65350F;
 }
 
 .right_column h4 {
@@ -690,16 +690,16 @@ border: 1px solid #af884a;
 }
 
 .inner_why_choose {
-    border: 1px dashed #9f7356;
+    border: 1px dashed #65350F;
     border-radius: 10px;
     padding: 30px;
     height: 100%;
-    /* box-shadow: #9f735663 5px 5px, #9f735652 10px 10px, #9f735638 15px 15px, #9f73561f 20px 20px, #9f73560d 25px 25px; */
+    /* box-shadow: #65350F63 5px 5px, #65350F52 10px 10px, #65350F38 15px 15px, #65350F1f 20px 20px, #65350F0d 25px 25px; */
     transition: all 0.3s ease-in-out;
 }
 
 .inner_why_choose:hover {
-box-shadow: #9f735663 5px 5px, #9f735652 10px 10px, #9f735638 15px 15px, #9f73561f 20px 20px, #9f73560d 25px 25px;
+box-shadow: #65350F63 5px 5px, #65350F52 10px 10px, #65350F38 15px 15px, #65350F1f 20px 20px, #65350F0d 25px 25px;
 transform: translateY(-5px);
 }
 
@@ -924,14 +924,14 @@ height: 100%;
 
 .strip_inner_text h2 {
 font-size: 2rem;
-color: #9f7356;
+color: #65350F;
 line-height: 40px;
 margin-bottom: 20px;
 }
 
 .strip_inner_text a h2 {
 font-size: 2rem;
-color: #9f7356;
+color: #65350F;
 line-height: 40px;
 margin-bottom: 20px;
 }
@@ -963,7 +963,7 @@ overflow: hidden;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, #9f735612 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, #65350F12 100%);
     opacity: 0;
     transition: opacity 0.4s, transform 0.4s;
     pointer-events: none;
@@ -1034,7 +1034,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background: #9f7356;
+background: #65350F;
 color: #fff;
 opacity: 0;
 display: flex;
@@ -1084,7 +1084,7 @@ margin-bottom: 10px;
 /* How to Get to Monaco css start */
 
 .how_to_get_inner {
-border: 2px solid #9f7356;
+border: 2px solid #65350F;
 border-radius: 10px;
 padding: 25px;
 height: 100%;
@@ -1224,7 +1224,7 @@ color: #777;
 .contact-info-box {
 background: #fff;
 padding: 20px 25px;
-border-left: 5px solid #9f7356;
+border-left: 5px solid #65350F;
 margin-bottom: 20px;
 box-shadow: 0 3px 10px rgb(0 0 0 / 41%);
 }
@@ -1235,7 +1235,7 @@ margin-right: 10px;
 }
 
 .contact-info-box a {
-color: #9f7356;
+color: #65350F;
 text-decoration: none;
 }
 
@@ -1244,7 +1244,7 @@ border-radius: 0;
 }
 
 .btn-yellow {
-background: #9f7356;
+background: #65350F;
 color: white;
 padding: 10px 30px;
 border: none;
@@ -1262,14 +1262,14 @@ height: 25px;
 }
 
 .left_section {
-box-shadow: #9f73563d 0px 3px 8px;
+box-shadow: #65350F3d 0px 3px 8px;
 padding: 40px;
 border-radius: 15px;
 height: 100%;
 }
 
 .right_section {
-box-shadow: #9f73563d 0px 3px 8px;
+box-shadow: #65350F3d 0px 3px 8px;
 padding: 40px;
 border-radius: 15px;
 height: 100%;
@@ -1350,12 +1350,12 @@ color: #000;
 
 .privcy_inner_text h2 {
 font-size: 2.1rem;
-color: #9f7356;
+color: #65350F;
 line-height: 2.5rem;
 }
 
 .privcy_inner_text p a {
-color: #9f7356;
+color: #65350F;
 }
 
 .privcy_inner_text p a:hover {
@@ -1421,7 +1421,7 @@ flex: 1;
 .event-title {
 font-size: 1.35rem;
 font-weight: 700;
-color: #9f7356;
+color: #65350F;
 margin-bottom: 0.5rem;
 }
 
@@ -1475,13 +1475,13 @@ height: 100%;
 border-radius: 15px;
 padding: 25px;
 transition: all 0.3s ease-in-out;
-background: #9f7356;
+background: #65350F;
 }
 
 .guide_col_inner:hover {
 border: 2px solid #af884a;
 border-radius: 15px;
-color: #9f7356;
+color: #65350F;
 transform: translateY(-6px) scale(1.03);
 }
 
@@ -1521,7 +1521,7 @@ margin-top: 5rem;
 
 .montecarlo-unique-experiences .section-title {
 text-align: center;
-color: #9f7356;
+color: #65350F;
 font-size: 2.1rem;
 font-weight: 700;
 margin-bottom: 0.7rem;
@@ -1583,7 +1583,7 @@ box-shadow: 0 2px 8px rgba(201, 160, 99, 0.09);
 }
 
 .montecarlo-experience-title {
-color: #9f7356;
+color: #65350F;
 font-size: 1.13rem;
 font-weight: 700;
 margin-bottom: 0.5rem;
@@ -1821,19 +1821,19 @@ color: #fff;
 
 .hotel_button a {
 padding: 10px;
-border: 1px solid #9f7356;
+border: 1px solid #65350F;
 display: inline-block;
 color: #fff;
 margin-top: 8px;
-background: #9f7356;
+background: #65350F;
 font-size: 1.1rem;
 transition: all 0.5s ease-in-out;
 }
 
 .hotel_button a:hover {
-border: 1px solid #9f7356;
+border: 1px solid #65350F;
 display: inline-block;
-color: #9f7356;
+color: #65350F;
 margin-top: 8px;
 background: transparent;
 font-size: 1.1rem;
@@ -1842,19 +1842,19 @@ font-size: 1.1rem;
 
 .hotel_button button {
 padding: 10px;
-border: 1px solid #9f7356;
+border: 1px solid #65350F;
 display: inline-block;
 color: #fff;
 margin-top: 8px;
-background: #9f7356;
+background: #65350F;
 font-size: 1.1rem;
 transition: all 0.5s ease-in-out;
 }
 
 .hotel_button button:hover {
-border: 1px solid #9f7356;
+border: 1px solid #65350F;
 display: inline-block;
-color: #9f7356;
+color: #65350F;
 margin-top: 8px;
 background: transparent;
 font-size: 1.1rem;
@@ -1927,7 +1927,7 @@ object-fit: cover;
 .blog-heading {
 font-size: 2.2rem;
 font-weight: 700;
-color: #9f7356;
+color: #65350F;
 line-height: 1.4;
 margin-bottom: 30px;
 }
@@ -1974,14 +1974,14 @@ left: 0;
 top: 10px;
 width: 8px;
 height: 8px;
-background: #9f7356;
+background: #65350F;
 border-radius: 50%;
 
 }
 
 
 span.icon i {
-color: #9f7356;
+color: #65350F;
 background: #ffff;
 padding: 10px;
 border-radius: 50%;
@@ -2053,8 +2053,8 @@ margin-bottom: 15px;
 .event_card_inner_text .cta-btn:hover {
     color: #fff;
     transform: translateY(-5px);
-    background-color: #9f7356;
-    border-color: #9f7356;
+    background-color: #65350F;
+    border-color: #65350F;
 }
 
 .event_card_inner {
