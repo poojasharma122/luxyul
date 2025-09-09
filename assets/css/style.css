@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&family=Cinzel:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Red Rose", serif;
+    font-family: "Baloo Chettan 2", sans-serif;
     margin: 0;
     line-height: 1;
     letter-spacing: 0.6px;
@@ -356,7 +356,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.luxyul-border {
+/* .luxyul-border {
     position: relative;
     display: flex;
     align-items: center;
@@ -372,11 +372,16 @@ ul {
     width: 70px;
     height: 2px;
     background: #000;
+} */
+
+.left_top.luxyul-border h2 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 15px;
 }
 
 .luxyul-border p {
     margin-left: 80px;
-    /* 70px border + 10px gap */
     position: relative;
     z-index: 1;
 }
@@ -1978,3 +1983,59 @@ span.icon i {
 .card-header {
     border-bottom: none;
 }
+
+
+/* new design second css start */
+
+.evet_card_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.event_card_inner_text {
+    padding: 30px 30px 30px;
+    float: left;
+    position: relative;
+    background: #fff;
+    border: 1px solid #b7b7b7;
+    background-color: #fff;
+}
+
+.event_card_inner_text h3 {
+    color: #000;
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.event_card_inner_text .cta-btn {
+    display: inline-block;
+    color: #1a4531;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border: 1px solid #000;
+}
+
+.event_card_inner_text .cta-btn:hover {
+    color: #fff;
+    transform: translateY(-5px);
+    background-color: #1a4531;
+}
+
+.event_card_inner {
+    transition: all 0.3s ease-in-out;
+}
+
+.event_card_inner:hover{
+    transform: translateY(-5px);
+}
+
+
+
+/* new design second css end */
