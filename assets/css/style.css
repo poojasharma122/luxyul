@@ -884,11 +884,11 @@ margin: 0 auto;
 }
 
 .luxyu_main_content_second h2 {
-font-size: 2.5rem;
-line-height: 42px;
-margin: 30px 0;
-color: #000;
-text-align: center;
+    font-size: 2.5rem;
+    line-height: 42px;
+    margin: 0 0 30px 0;
+    color: #000;
+    text-align: center;
 }
 
 .luxyu_main_content_second p {
